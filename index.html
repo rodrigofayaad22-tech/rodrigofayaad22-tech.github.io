@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Rodrigo Generoso | Software Engineering Portfolio</title>
+    <meta
+      name="description"
+      content="Software Engineering student focused on Artificial Intelligence, Data and Software Development."
+    />
+    <meta name="author" content="Rodrigo César de Andrade Fayad Generoso" />
+    <meta name="theme-color" content="#05060b" />
+    <meta name="color-scheme" content="dark" />
+    <link rel="canonical" href="__SITE_URL__/" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="profile" />
+    <meta property="og:site_name" content="Rodrigo Generoso" />
+    <meta property="og:title" content="Rodrigo Generoso | Software Engineering Portfolio" />
+    <meta
+      property="og:description"
+      content="Software Engineering student focused on Artificial Intelligence, Data and Software Development."
+    />
+    <meta property="og:url" content="__SITE_URL__/" />
+    <meta property="og:image" content="__SITE_URL__/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Rodrigo Generoso — Software Engineering Student · AI, Data and Software Development" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="pt_BR" />
+    <meta property="profile:first_name" content="Rodrigo" />
+    <meta property="profile:last_name" content="Generoso" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Rodrigo Generoso | Software Engineering Portfolio" />
+    <meta
+      name="twitter:description"
+      content="Software Engineering student focused on Artificial Intelligence, Data and Software Development."
+    />
+    <meta name="twitter:image" content="__SITE_URL__/og-image.jpg" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Rodrigo César de Andrade Fayad Generoso",
+        "alternateName": "Rodrigo Generoso",
+        "jobTitle": "Software Engineering Student",
+        "url": "__SITE_URL__/",
+        "image": "__SITE_URL__/og-image.jpg",
+        "email": "mailto:rodrigofayaad22@gmail.com",
+        "knowsAbout": ["Artificial Intelligence", "Data", "Software Development", "Requirements Engineering"],
+        "affiliation": {
+          "@type": "CollegeOrUniversity",
+          "name": "CEUB — Centro Universitário de Brasília"
+        },
+        "sameAs": [
+          "https://github.com/rodrigofayaad22-tech",
+          "https://www.linkedin.com/in/rodrigo-generoso-498b29378/"
+        ]
+      }
+    </script>
+
+    <script>
+      // Set <html lang> before first paint (stored preference, then browser language).
+      ;(function () {
+        try {
+          var l = localStorage.getItem('rg-portfolio-lang')
+          if (l !== 'pt' && l !== 'en') l = /^pt/i.test(navigator.language || '') ? 'pt' : 'en'
+          document.documentElement.lang = l === 'pt' ? 'pt-BR' : 'en'
+        } catch (e) {}
+      })()
+    </script>
+
+    <style>
+      /* Critical: background + very short boot mark while the bundle loads. */
+      html { background: #05060b; }
+      #boot {
+        position: fixed; inset: 0; z-index: 9999; display: grid; place-items: center;
+        background: #05060b; transition: opacity .45s ease, visibility .45s ease;
+        animation: boot-timeout .4s ease 3s forwards;
+      }
+      #boot.is-done { opacity: 0; visibility: hidden; }
+      .boot-mark {
+        display: flex; align-items: center; gap: .1em; color: #e9ebf5;
+        font: 600 22px/1 ui-monospace, "Cascadia Code", "SFMono-Regular", Menlo, Consolas, monospace;
+        letter-spacing: .04em;
+      }
+      .boot-mark .br { color: #6f8dff; opacity: 0; animation: boot-in .5s ease .05s forwards; }
+      .boot-mark .br:last-child { color: #9b7bff; }
+      .boot-mark .rg {
+        padding: 0 .2em; background: linear-gradient(120deg, #e9ebf5 30%, #8fa8ff 50%, #e9ebf5 70%);
+        background-size: 250% 100%; -webkit-background-clip: text; background-clip: text; color: transparent;
+        animation: boot-shine 1.4s ease-in-out infinite;
+      }
+      @keyframes boot-in { from { opacity: 0; transform: translateX(-4px); } to { opacity: 1; transform: none; } }
+      @keyframes boot-shine { from { background-position: 100% 0; } to { background-position: -50% 0; } }
+      @keyframes boot-timeout { to { opacity: 0; visibility: hidden; } }
+      @media (prefers-reduced-motion: reduce) {
+        #boot, .boot-mark * { animation-duration: 0s !important; animation-delay: 0s !important; }
+        .boot-mark .br { opacity: 1; }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="boot" aria-hidden="true">
+      <div class="boot-mark"><span class="br">&lt;</span><span class="rg">RG</span><span class="br">/&gt;</span></div>
+    </div>
+    <div id="root"></div>
+    <noscript>
+      <div style="max-width:40rem;margin:4rem auto;padding:0 1rem;color:#e9ebf5;font-family:system-ui,sans-serif;line-height:1.6">
+        <h1>Rodrigo César de Andrade Fayad Generoso</h1>
+        <p>Software Engineering Student — CEUB. AI • Data • Software Development.</p>
+        <p>
+          <a style="color:#8fa8ff" href="https://github.com/rodrigofayaad22-tech">GitHub</a> ·
+          <a style="color:#8fa8ff" href="https://www.linkedin.com/in/rodrigo-generoso-498b29378/">LinkedIn</a> ·
+          <a style="color:#8fa8ff" href="mailto:rodrigofayaad22@gmail.com">rodrigofayaad22@gmail.com</a>
+        </p>
+        <p>Enable JavaScript to view the full portfolio.</p>
+      </div>
+    </noscript>
+    <script type="module" src="/src/entries/home.jsx"></script>
+  </body>
+</html>

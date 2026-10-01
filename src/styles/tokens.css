@@ -1,0 +1,56 @@
+:root {
+  color-scheme: dark;
+
+  /* Surfaces */
+  --bg: #05060b;
+  --bg-elev: #090b14;
+  --surface: #0c0f1b;
+
+  /* Lines */
+  --line: rgba(148, 163, 255, 0.09);
+  --line-2: rgba(148, 163, 255, 0.16);
+  --line-3: rgba(148, 163, 255, 0.28);
+
+  /* Text (all ≥ 4.5:1 on --bg except --faint, used only for decoration) */
+  --text: #eceef7;
+  --text-2: #b9bed2;
+  --muted: #8d93ab;
+  --faint: #5d6380;
+
+  /* Brand */
+  --blue: #5b82ff;
+  --blue-2: #8fa8ff;
+  --violet: #8b5cf6;
+  --violet-2: #b49dff;
+  --green: #3ddc97;
+  --amber: #f3b35b;
+  --gateway: #f5d76e;
+
+  --grad: linear-gradient(120deg, #5b82ff 0%, #8b5cf6 100%);
+  --grad-text: linear-gradient(100deg, #e4e9ff 0%, #a9b8ff 45%, #c4b1ff 100%);
+
+  /* Shape */
+  --radius-sm: 10px;
+  --radius: 16px;
+  --radius-lg: 24px;
+
+  /* Type */
+  --font-sans: 'Inter Variable', Inter, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Sora Variable', 'Inter Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono Variable', ui-monospace, 'Cascadia Code', 'SFMono-Regular', Menlo, Consolas, monospace;
+
+  /* Layout */
+  --container: 1200px;
+  --gutter: clamp(16px, 4vw, 40px);
+  --nav-h: 68px;
+  --section-y: clamp(76px, 9vw, 124px);
+  --rail-col: 0px;
+
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --rail-col: 64px;
+  }
+}
